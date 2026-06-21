@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>France Efficace — Travailler moins. Gagner plus.</title>
+  <meta name="description" content="France Efficace est un mouvement politique en construction pour une France plus simple, plus productive et plus prospère : IA, énergie, école, jeunesse et souveraineté." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="France Efficace — Travailler moins. Gagner plus." />
+  <meta property="og:description" content="Moins de bureaucratie. Plus de résultats. Un mouvement pour une France plus simple, plus productive et plus prospère." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="France Efficace — Travailler moins. Gagner plus." />
+  <meta name="twitter:description" content="Moins de bureaucratie. Plus de résultats. Un mouvement pour une France plus simple, plus productive et plus prospère." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --black:#000000;
+      --white:#FFFFFF;
+      --text:#555555;
+      --soft:#F5F5F5;
+      --line:#E8E8E8;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, Helvetica, Arial, sans-serif;
+      background:var(--white);
+      color:var(--black);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    p{color:var(--text);line-height:1.65;margin:0;font-size:18px}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    header{
+      position:sticky;top:0;z-index:20;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:900;letter-spacing:-.04em;font-size:22px}
+    .navlinks{display:flex;align-items:center;gap:26px;color:var(--text);font-size:14px;font-weight:600}
+    .navlinks a:hover{color:var(--black)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      border:1px solid var(--black);background:var(--black);color:var(--white);
+      padding:14px 20px;border-radius:999px;font-weight:800;font-size:14px;
+      min-height:48px;transition:transform .15s ease, background .15s ease, color .15s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.secondary{background:var(--white);color:var(--black)}
+    main{overflow:hidden}
+    section{padding:108px 0;border-bottom:1px solid var(--line)}
+    .hero{padding:112px 0 96px;border-bottom:0}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;max-width:920px}
+    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--text);margin-bottom:18px}
+    h1,h2,h3{margin:0;letter-spacing:-.055em;line-height:.94}
+    h1{font-size:clamp(58px,10vw,132px);max-width:960px}
+    h2{font-size:clamp(40px,6vw,76px);max-width:860px;margin-bottom:26px}
+    h3{font-size:28px;line-height:1.05;margin-bottom:18px;letter-spacing:-.045em}
+    .slogan{font-size:clamp(30px,5vw,64px);font-weight:900;letter-spacing:-.055em;line-height:1;margin-top:18px;color:var(--black)}
+    .lead{max-width:780px;font-size:22px;line-height:1.55;margin-top:28px;color:var(--text)}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+    .manifest{background:var(--soft)}
+    .manifest-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:42px}
+    .line-card{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:24px;font-weight:800;font-size:22px;letter-spacing:-.035em;line-height:1.15}
+    .line-card span{display:block;color:var(--text);font-weight:600;font-size:16px;letter-spacing:0;margin-top:10px;line-height:1.45}
+    .section-head{display:flex;justify-content:space-between;gap:32px;align-items:end;margin-bottom:44px}
+    .section-head p{max-width:470px}
+    .program-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .program-card{border:1px solid var(--line);border-radius:28px;padding:32px;background:var(--white);min-height:430px;display:flex;flex-direction:column}
+    .num{width:38px;height:38px;border-radius:999px;background:var(--black);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:26px}
+    .program-card p{font-size:16px;margin-bottom:20px}
+    ul{padding:0;margin:0;list-style:none;display:grid;gap:10px}
+    li{color:var(--text);line-height:1.45;font-size:15px;position:relative;padding-left:18px}
+    li:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--black);position:absolute;left:0;top:.62em}
+    .objective{margin-top:auto;padding-top:22px;color:var(--black);font-weight:800;font-size:15px;line-height:1.45}
+    .about{background:var(--black);color:var(--white)}
+    .about p{color:#D7D7D7;max-width:830px;font-size:22px;margin-bottom:18px}
+    .about h2{color:var(--white)}
+    .about .btn.secondary{border-color:var(--white);background:transparent;color:var(--white)}
+    .join{background:var(--soft)}
+    .join-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:start}
+    form{background:var(--white);border:1px solid var(--line);border-radius:30px;padding:28px;display:grid;gap:16px}
+    .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    label{display:grid;gap:8px;font-weight:800;font-size:13px;color:var(--black)}
+    input,select,textarea{
+      width:100%;border:1px solid #DCDCDC;background:#fff;border-radius:16px;padding:14px 15px;
+      font:inherit;font-size:15px;color:var(--black);outline:none;
+    }
+    input:focus,select:focus,textarea:focus{border-color:var(--black)}
+    .full{grid-column:1/-1}
+    .checkboxes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:4px}
+    .check{display:flex;gap:9px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:11px 12px;color:var(--text);font-size:14px;font-weight:600}
+    .check input{width:auto}
+    .form-note{font-size:13px;color:var(--text);line-height:1.5}
+    .form-status{font-size:14px;font-weight:800;color:var(--black);min-height:20px}
+    footer{padding:48px 0;background:var(--black);color:var(--white)}
+    .foot{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:start}
+    .foot p{color:#BFBFBF;font-size:15px;margin-top:8px}
+    .foot-links{display:flex;gap:20px;flex-wrap:wrap;color:#D7D7D7;font-size:14px;font-weight:700;justify-content:flex-end}
+    .contact{color:#fff;margin-top:16px;font-weight:800}
+    @media(max-width:820px){
+      .nav{height:auto;padding:18px 0;align-items:flex-start}.navlinks{gap:14px;flex-wrap:wrap;justify-content:flex-end}.navlinks a:not(.btn){display:none}
+      section{padding:74px 0}.hero{padding:84px 0 70px}.lead,.about p{font-size:19px}.manifest-list,.program-grid,.join-grid{grid-template-columns:1fr}.section-head{display:block}.fields,.checkboxes{grid-template-columns:1fr}.program-card{min-height:auto}.foot{grid-template-columns:1fr}.foot-links{justify-content:flex-start}h1{font-size:62px}.slogan{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="France Efficace accueil">France Efficace</a>
+      <nav class="navlinks" aria-label="Navigation principale">
+        <a href="#programme">Programme</a>
+        <a href="#manifeste">Manifeste</a>
+        <a href="#apropos">À propos</a>
+        <a class="btn" href="#rejoindre">Rejoindre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Mouvement politique en construction</div>
+          <h1>France Efficace</h1>
+          <div class="slogan">Travailler moins. Gagner plus.</div>
+          <p class="lead">La France ne manque pas de talents. Elle manque d'efficacité.</p>
+          <p class="lead">Notre objectif : utiliser l'IA, l'énergie, l'éducation et la souveraineté pour rendre la France plus simple, plus productive et plus prospère.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#rejoindre">Rejoindre le mouvement</a>
+            <a class="btn secondary" href="#programme">Lire le programme</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifest" id="manifeste">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Manifeste court</div>
+            <h2>Moins de bureaucratie. Plus de résultats.</h2>
+          </div>
+          <p>Pendant trop longtemps, on a demandé aux Français de faire toujours plus avec toujours moins : plus de démarches, plus de taxes, plus de normes, plus d'attente, plus de complexité. Nous voulons l'inverse.</p>
+        </div>
+        <div class="manifest-list">
+          <div class="line-card">Moins de bureaucratie.<span>Plus de résultats.</span></div>
+          <div class="line-card">Moins de tâches inutiles.<span>Plus de temps libre.</span></div>
+          <div class="line-card">Moins de dépenses inefficaces.<span>Plus d'investissement dans la jeunesse.</span></div>
+          <div class="line-card">Moins de dépendance.<span>Plus de souveraineté.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programme">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Le programme</div>
+            <h2>Sept priorités pour un pays qui fonctionne.</h2>
+          </div>
+          <p>Des phrases courtes. Des objectifs mesurables. Une obsession : rendre la France plus simple, plus rapide et plus prospère.</p>
+        </div>
+        <div class="program-grid">
+          <article class="program-card"><div class="num">1</div><h3>Un État IA</h3><p>Chaque administration doit devenir plus rapide, plus simple et plus accessible.</p><ul><li>Assistant IA pour chaque fonctionnaire.</li><li>Réponse administrative garantie sous 72h.</li><li>Suppression des démarches répétitives.</li><li>Services publics disponibles 24h/24.</li><li>Audit des dépenses publiques par IA.</li></ul><div class="objective">Objectif : diviser par deux les délais administratifs.</div></article>
+          <article class="program-card"><div class="num">2</div><h3>Travailler moins, gagner plus</h3><p>Le progrès technologique doit bénéficier aux Français.</p><ul><li>Automatiser les tâches inutiles.</li><li>Réduire les réunions et procédures absurdes.</li><li>Augmenter la productivité.</li><li>Transformer les gains de productivité en pouvoir d'achat.</li><li>Favoriser les entreprises qui partagent les gains liés à l'IA.</li></ul><div class="objective">Objectif : travailler mieux, vivre mieux, gagner plus.</div></article>
+          <article class="program-card"><div class="num">3</div><h3>Une école au niveau des meilleurs</h3><p>La France doit copier ce qui marche.</p><ul><li>Programme éducatif inspiré des meilleurs pays comme Singapour.</li><li>Retour massif des mathématiques.</li><li>IA dès le collège.</li><li>Anglais renforcé.</li><li>Évaluation claire des résultats.</li><li>Priorité absolue aux enseignants et à la discipline.</li></ul><div class="objective">Objectif : faire entrer la France dans le top mondial de l'éducation.</div></article>
+          <article class="program-card"><div class="num">4</div><h3>Investir dans la jeunesse</h3><p>La France doit arrêter de sacrifier son avenir.</p><ul><li>Réorienter une partie des dépenses publiques vers les jeunes.</li><li>Faciliter l'accès au logement.</li><li>Soutenir les jeunes entrepreneurs.</li><li>Formation continue gratuite.</li><li>Priorité à l'emploi des moins de 30 ans.</li></ul><div class="objective">Objectif : faire de la France le meilleur pays d'Europe pour démarrer sa vie.</div></article>
+          <article class="program-card"><div class="num">5</div><h3>Plus de nucléaire</h3><p>L'énergie est la base de la souveraineté.</p><ul><li>Construire de nouveaux réacteurs.</li><li>Accélérer les petits réacteurs modulaires.</li><li>Réduire les délais administratifs.</li><li>Investir dans la recherche nucléaire.</li><li>Produire une électricité abondante et moins chère.</li></ul><div class="objective">Objectif : l'électricité la plus compétitive d'Europe.</div></article>
+          <article class="program-card"><div class="num">6</div><h3>Souveraineté nationale</h3><p>La France doit redevenir maître de ses choix.</p><ul><li>Référendum sur l'immigration.</li><li>Protection des données françaises.</li><li>Relocalisation des industries stratégiques.</li><li>Moins de dépendance extérieure.</li><li>Moins d'Europe bureaucratique, plus d'Europe utile.</li></ul><div class="objective">Objectif : une France libre, forte et indépendante.</div></article>
+          <article class="program-card"><div class="num">7</div><h3>Sécurité augmentée</h3><p>La technologie doit protéger les citoyens.</p><ul><li>IA pour mieux détecter les menaces.</li><li>Modernisation des forces de sécurité.</li><li>Réduction des délais judiciaires.</li><li>Lutte renforcée contre les réseaux criminels.</li><li>Plus d'efficacité dans l'application des peines.</li></ul><div class="objective">Objectif : moins d'insécurité, plus de tranquillité.</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="apropos">
+      <div class="wrap">
+        <div class="eyebrow">Pourquoi France Efficace ?</div>
+        <h2>Parce que la France obtient trop peu de résultats.</h2>
+        <p>La France dépense beaucoup, travaille beaucoup, taxe beaucoup, mais obtient trop peu de résultats. Nous voulons un pays qui fonctionne.</p>
+        <p>Un pays où une démarche administrative prend 5 minutes, pas 5 semaines. Un pays où l'école prépare vraiment l'avenir. Un pays où l'énergie est abondante. Un pays où l'IA sert les citoyens au lieu de les remplacer. Un pays où les jeunes peuvent construire leur vie.</p>
+        <p>France Efficace n'est pas un parti du passé. C'est un mouvement pour ceux qui veulent des résultats.</p>
+        <div class="hero-actions"><a class="btn secondary" href="#rejoindre">Rejoindre France Efficace</a></div>
+      </div>
+    </section>
+
+    <section class="join" id="rejoindre">
+      <div class="wrap join-grid">
+        <div>
+          <div class="eyebrow">Appel à rejoindre</div>
+          <h2>Rejoindre France Efficace</h2>
+          <p>Si vous pensez que la France peut faire mieux, plus vite et plus intelligemment, rejoignez-nous.</p>
+        </div>
+        <form id="join-form">
+          <div class="fields">
+            <label>Prénom<input name="prenom" autocomplete="given-name" required /></label>
+            <label>Nom<input name="nom" autocomplete="family-name" required /></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required /></label>
+            <label>Ville<input name="ville" autocomplete="address-level2" /></label>
+            <label class="full">Profession<input name="profession" autocomplete="organization-title" /></label>
+            <label class="full">Je veux aider sur</label>
+            <div class="checkboxes full">
+              <label class="check"><input type="checkbox" name="aide" value="Communication" /> Communication</label>
+              <label class="check"><input type="checkbox" name="aide" value="Programme" /> Programme</label>
+              <label class="check"><input type="checkbox" name="aide" value="Terrain" /> Terrain</label>
+              <label class="check"><input type="checkbox" name="aide" value="Parrainages" /> Parrainages</label>
+              <label class="check"><input type="checkbox" name="aide" value="Réseaux sociaux" /> Réseaux sociaux</label>
+              <label class="check"><input type="checkbox" name="aide" value="Tech / IA" /> Tech / IA</label>
+              <label class="check"><input type="checkbox" name="aide" value="Organisation locale" /> Organisation locale</label>
+            </div>
+          </div>
+          <p class="form-note">Le formulaire est prêt visuellement. La réception des inscriptions sera connectée dans une prochaine étape.</p>
+          <div class="form-status" id="form-status" aria-live="polite"></div>
+          <button class="btn" type="submit">Je rejoins France Efficace</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <div class="brand">France Efficace</div>
+        <p>Travailler moins. Gagner plus.</p>
+        <div class="contact">contact@france-efficace.fr</div>
+        <p>Mouvement politique en construction.</p>
+      </div>
+      <nav class="foot-links" aria-label="Liens de pied de page">
+        <a href="#programme">Programme</a>
+        <a href="#apropos">À propos</a>
+        <a href="#rejoindre">Rejoindre</a>
+        <a href="mailto:contact@france-efficace.fr">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('join-form').addEventListener('submit', function(event){
+      event.preventDefault();
+      document.getElementById('form-status').textContent = 'Merci. Le formulaire sera bientôt connecté.';
+    });
+  </script>
+</body>
+</html>
